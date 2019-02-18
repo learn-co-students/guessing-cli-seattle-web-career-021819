@@ -1,9 +1,5 @@
 require 'pry'
 
-def exit
-  puts "Goodbye!"
-end
-
 
 def run_guessing_game
   number = rand(6)
@@ -12,7 +8,7 @@ def run_guessing_game
     puts "Guess a number between 1 and 6."
     input = gets.chomp
     if input == "exit"
-      exit
+      puts "Goodbye!"
       break
     else
       puts "The computer guessed #{number}."
